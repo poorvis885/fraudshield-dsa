@@ -46,31 +46,32 @@ g++ create_data.cpp -o create_data
 ./create_data
 
 
-💻 How to Run
-▶️ Compile and Run FraudShield++
+💻**How to Run**
+
+▶️ **Compile and Run FraudShield++**
 
 g++ main.cpp graph.cpp hashing.cpp trie.cpp priority_alerts.cpp -o fraudDetect
 ./fraudDetect
 
 
-📸 Sample Output
+📸 **Sample Output**
 
-[Graph Module] Detecting Fake User Clusters...
+**[Graph Module]** Detecting Fake User Clusters...
 Suspicious user cluster: U5 U4
 Suspicious user cluster: U3 U1 U2
 
-[Hashing Module] Checking for Duplicate Product Titles...
+**[Hashing Module]** Checking for Duplicate Product Titles...
 ✔️ Duplicate Detected: iPhone 14 Pro
 ✔️ Duplicate Detected: Samsung S21
 
-[Trie Module] Checking for Suspicious Product Titles...
+**[Trie Module]** Checking for Suspicious Product Titles...
 🚨 Suspicious match found: iPhone 14
 
-[Alert Module] Prioritizing High-Risk Users...
+**[Alert Module]** Prioritizing High-Risk Users...
 ⚠️ User U1 flagged with risk score: 90
 ⚠️ User U5 flagged with risk score: 70
 
-🧠 Built With
+🧠 **Built With**
 C++ STL (unordered_map, queue, priority_queue)
 
 DFS/BFS Graph Traversal
@@ -81,16 +82,14 @@ Hashing Techniques
 
 File I/O and Modular OOP Design
 
-💡 Ideal For
-Flipkart SDE Internship Projects
+💡 **Ideal For**
 
+SDE Internship Projects
 Data Structures + Algo Portfolio
-
 Mini/Minor Projects for College
-
 Practice for Graph/Trie/Hashing/Heaps
 
-👩‍💻 Developed By
+👩‍💻 **Developed By**
 Poorvi Shrivastava
 🎓 B.Tech – IoT & Embedded Systems
 🌐 GitHub: @poorvis885
@@ -98,17 +97,5 @@ Poorvi Shrivastava
 
 ⭐ Give it a star if it helped you!
 
-
----
-
- ✅ What to Do Next:
-
-1. Paste this into your `README.md`
-2. Save it
-3. Run:
-   ```bash
-   git add README.md
-   git commit -m "Updated README with full project documentation"
-   git push
 
 
