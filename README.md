@@ -46,9 +46,9 @@ g++ create_data.cpp -o create_data
 ./create_data
 
 
-💻**How to Run**
+##💻How to Run
 
-▶️ **Compile and Run FraudShield++**
+##▶️Compile and Run FraudShield++
 
 g++ main.cpp graph.cpp hashing.cpp trie.cpp priority_alerts.cpp -o fraudDetect
 ./fraudDetect
