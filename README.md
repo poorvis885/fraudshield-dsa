@@ -1,20 +1,20 @@
-# FraudShield++ 🔒 — Smart E-commerce Fraud Detection System
+# 🚨 FraudShield++ – A DSA-Based Fraud Detection System
 
-FraudShield++ is a modular C++ project designed to simulate fraud detection in an e-commerce platform (like **Flipkart**) using **core DSA concepts**. It detects suspicious user clusters, duplicate listings, and fraudulent keywords — all via command-line interface.
-
----
-
-## 🚀 Features
-
-- 🔍 **Detect fake user accounts** using Graph Traversal (BFS)
-- 🔄 **Identify duplicate product titles** using Hashing
-- 🧠 **Detect suspicious keywords in reviews** using Trie
-- ⚠️ **Prioritize high-risk users** using Max Heap (Priority Queue)
-- 📂 Reads data from text files, logs results in `alerts.txt`
+FraudShield++ is a C++-based project that uses core Data Structures and Algorithms to detect fraud in an e-commerce environment like Flipkart. It identifies suspicious user clusters, repeated product listings, and fake reviews — all using **Graphs, Hashing, Tries**, and **Priority Queues**.
 
 ---
 
-## 📂 Folder Structure
+## 🎯 Features
+
+- 🔍 **Detect Fake User Accounts** using Graph Traversal (DFS/BFS)
+- 🧬 **Find Duplicate Products** using Hash Maps
+- ⚠️ **Spot Suspicious Keywords** in Reviews using Trie Data Structure
+- 🚨 **Generate Risk Alerts** using Priority Queues
+- 🗂️ Modular, well-organized, beginner-friendly C++ code
+
+---
+
+## 📂 Project Structure
 
 fraud_detection_dsa/
 ├── main.cpp
@@ -22,89 +22,93 @@ fraud_detection_dsa/
 ├── hashing.cpp / hashing.h
 ├── trie.cpp / trie.h
 ├── priority_alerts.cpp / priority_alerts.h
-├── fraudDetect.exe
-├── alerts.txt
-├── users.txt
-├── products.txt
-├── reviews.txt
+├── create_data.cpp
+├── data/
+│ ├── users.txt
+│ ├── products.txt
+│ └── reviews.txt
 └── README.md
 
 
 ---
 
-## 🧠 DSA Concepts Used
+## 🧪 Sample Input Data (📁 data/)
 
-| Module           | Data Structure        | Purpose                                |
-|------------------|-----------------------|----------------------------------------|
-| User Clustering  | Graph (Adj List)      | Detect fake account networks           |
-| Product Matching | Hash Table            | Spot duplicate listings                |
-| Keyword Filter   | Trie                  | Flag suspicious product/review terms   |
-| Alert Prioritizer| Max Heap (Priority Q) | Raise critical alerts first            |
+| File         | Purpose                                |
+|--------------|----------------------------------------|
+| `users.txt`   | Fake user relationships (e.g., U1 U2) |
+| `products.txt`| Product titles (some are duplicated)  |
+| `reviews.txt` | Reviews (some contain flagged words)  |
 
----
-
-## 🧪 Sample Output
-
+To auto-create these files:
 ```bash
-≡ Fraud Detection System Started...
+g++ create_data.cpp -o create_data
+./create_data
+
+
+💻 How to Run
+▶️ Compile and Run FraudShield++
+
+g++ main.cpp graph.cpp hashing.cpp trie.cpp priority_alerts.cpp -o fraudDetect
+./fraudDetect
+
+
+📸 Sample Output
 
 [Graph Module] Detecting Fake User Clusters...
 Suspicious user cluster: U5 U4
 Suspicious user cluster: U3 U1 U2
 
 [Hashing Module] Checking for Duplicate Product Titles...
-✓ Duplicate Detected: iPhone 14 Pro
-✓ Duplicate Detected: Samsung S21
+✔️ Duplicate Detected: iPhone 14 Pro
+✔️ Duplicate Detected: Samsung S21
 
 [Trie Module] Checking for Suspicious Product Titles...
-⚠ Suspicious match found: iPhone 14
+🚨 Suspicious match found: iPhone 14
 
 [Alert Module] Prioritizing High-Risk Users...
-⚠ User U1 flagged with risk score: 90
-⚠ User U5 flagged with risk score: 70
-⚠ User U3 flagged with risk score: 30
-✓ Analysis Complete.
+⚠️ User U1 flagged with risk score: 90
+⚠️ User U5 flagged with risk score: 70
 
+🧠 Built With
+C++ STL (unordered_map, queue, priority_queue)
 
-⚙️ How to Run
-👉 Requirements:
-C++ compiler (e.g., g++)
+DFS/BFS Graph Traversal
 
-👉 Compile:
+Trie Data Structure
 
-g++ main.cpp graph.cpp hashing.cpp trie.cpp priority_alerts.cpp -o fraudDetect
+Hashing Techniques
 
+File I/O and Modular OOP Design
 
-👉 Run:
+💡 Ideal For
+Flipkart SDE Internship Projects
 
-./fraudDetect
+Data Structures + Algo Portfolio
 
-✨ Project Highlights
+Mini/Minor Projects for College
 
-💡 Real-world simulation for fraud detection
-📚 Great for showcasing DSA applied in real-world systems
-🎯 Excellent discussion project for SDE internships
+Practice for Graph/Trie/Hashing/Heaps
 
-👩‍💻 Author
+👩‍💻 Developed By
 Poorvi Shrivastava
-4th Year B.Tech (IoT + Embedded Systems)
-💼 Aspiring SDE Intern | 💬 Open to collaborations
+🎓 B.Tech – IoT & Embedded Systems
+🌐 GitHub: @poorvis885
 
 
-📌 Tags
-C++ | DSA | Graphs | Trie | Hashing | E-commerce Fraud Detection | Internship Ready
+⭐ Give it a star if it helped you!
 
 
 ---
 
-## ✅ What to Do Next
+## ✅ What to Do Next:
 
-1. Paste the above content into a new file in VS Code: `README.md`
-2. Save it inside your `fraud_detection_dsa` folder
+1. Paste this into your `README.md`
+2. Save it
 3. Run:
-```bash
-git add README.md
-git commit -m "Added professional README"
-git push
+   ```bash
+   git add README.md
+   git commit -m "Updated README with full project documentation"
+   git push
 
 
